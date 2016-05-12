@@ -1,0 +1,115 @@
+$search-border-color: #CCC;
+$search-active-border-color: #66AFE9;
+$search-background-color: $white;
+
+$icons-color: $dark-blue;
+
+$used-parameter-color: $dark-blue;
+$available-parameter-color: #BDBDBD;
+$available-parameters-title-color: darken($available-parameter-color, 10%);
+$parameter-text-color: $white;
+$parameter-hover-shadow-color: rgba(0, 0, 0, 0.2);
+
+.basic-search {
+  background-color: $search-background-color;
+  border: 1px solid $search-border-color;
+  border-radius: 0;
+  cursor: text;
+  display: block;
+  line-height: 38px;
+  min-height: 40px;
+  padding: 0 12px;
+  position: relative;
+
+  .active {
+    border-color: $search-active-border-color;
+  }
+
+  .fa-search, .fa-times-circle {
+    float: right;
+    padding: 11px 0;
+  }
+
+  .fa-times-circle {
+    color: $icons-color;
+    cursor: pointer;
+  }
+
+  .search-parameter {
+    background-color: $used-parameter-color;
+    border-radius: 4px;
+    cursor: default;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 7px 0 0;
+    padding: 0 5px;
+    transition: box-shadow 100ms linear;
+  }
+
+  .search-parameter:hover {
+    box-shadow: 0 3px 3px $parameter-hover-shadow-color;
+  }
+
+  .search-parameter div {
+    float: left;
+    margin: 0 2px;
+  }
+
+  .search-parameter .remove-icon {
+    color: $parameter-text-color;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .search-parameter .key {
+    color: $parameter-text-color;
+  }
+
+  .search-parameter .value span {
+    color: $parameter-text-color;
+  }
+
+  .search-parameter .value input {
+    height: 24px;
+  }
+
+  .search-parameter-input {
+    border: 0;
+    display: inline-block;
+    flex: 1;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .search-parameter-input:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  .parameter-suggestions {
+    cursor: auto;
+    display: block;
+  }
+
+  .parameter-suggestions .title {
+    background-color: $search-background-color;
+    color: $available-parameters-title-color;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin: 7px 7px 0 0;
+    padding: 0 5px;
+  }
+
+  .parameter-suggestions .search-parameter {
+    background-color: $available-parameter-color;
+    color: $parameter-text-color;
+    cursor: pointer;
+  }
+}
