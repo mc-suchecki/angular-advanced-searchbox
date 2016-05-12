@@ -1,13 +1,13 @@
 $search-border-color: #CCC;
 $search-active-border-color: #66AFE9;
-$search-background-color: $white;
+$search-background-color: white;
 
-$icons-color: $dark-blue;
+$icons-color: #205081;
 
-$used-parameter-color: $dark-blue;
+$used-parameter-color: #205081;
 $available-parameter-color: #BDBDBD;
 $available-parameters-title-color: darken($available-parameter-color, 10%);
-$parameter-text-color: $white;
+$parameter-text-color: white;
 $parameter-hover-shadow-color: rgba(0, 0, 0, 0.2);
 
 .basic-search {

@@ -3,7 +3,7 @@ import {ISearchParameter} from './ISearchParameter.ts';
 
 /**
  * Component responsible for displaying the basic search widget.
- * @author msucheck
+ * @author mc
  */
 export class BasicSearchComponent {
     public template: string = `

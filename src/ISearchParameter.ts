@@ -1,6 +1,6 @@
 /**
  * Represents a search parameter - used in the BasicSearchComponent.
- * @author msucheck
+ * @author mc
  */
 export interface ISearchParameter {
     /** Identifier of the parameter. */

@@ -1,7 +1,7 @@
 /**
  * Directive responsible for setting focus on given HTML element on condition. Right after the the boolean value
  * passed to 'focus-on-true' evaluates to true, HTML tag with that attribute will be focused.
- * @author msucheck
+ * @author mc
  */
 export default ['$timeout',
     function ($timeout: angular.ITimeoutService): angular.IDirective {
